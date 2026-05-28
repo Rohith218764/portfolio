@@ -1747,10 +1747,10 @@ body.dark-mode .theme-toggle {
         width: 80%;
         max-width: 400px;
         height: 100vh;
-        background: var(--dark);
+        background: var(--bg-card);
         padding: 100px 40px 40px;
         transition: var(--transition);
-        box-shadow: var(--shadow-xl);
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
     }
     
     .nav-menu.show {
@@ -1765,8 +1765,14 @@ body.dark-mode .theme-toggle {
     .nav-link {
         font-size: 1.1rem;
         padding: 16px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid var(--border);
         display: block;
+        color: var(--text-body);
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--primary);
     }
     
     .nav-toggle,
@@ -1778,6 +1784,7 @@ body.dark-mode .theme-toggle {
         position: absolute;
         top: 24px;
         right: 24px;
+        color: var(--text-dark);
     }
     
     .nav-actions {
@@ -1886,6 +1893,39 @@ body.dark-mode .theme-toggle {
         flex-direction: column;
         text-align: center;
         padding: 24px;
+    }
+    
+    /* Mobile Navigation Fix */
+    .nav-menu {
+        width: 85%;
+        max-width: 320px;
+        padding: 90px 24px 40px;
+        overflow-y: auto;
+        background: var(--bg-card) !important;
+    }
+    
+    .nav-list {
+        gap: 0;
+    }
+    
+    .nav-link {
+        font-size: 0.95rem;
+        padding: 18px 0;
+        line-height: 1.4;
+        border-bottom: 1px solid var(--border);
+        color: var(--text-body);
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--primary);
+    }
+    
+    .nav-close {
+        top: 20px;
+        right: 20px;
+        font-size: 1.8rem;
+        color: var(--text-dark);
     }
 }
 
