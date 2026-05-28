@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const titles = [
         'Software Developer',
         'Backend Developer',
-        'Problem Solver'
     ];
     
     let titleIndex = 0;
@@ -144,18 +143,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typedText) {
         typeEffect();
     }
-
-    // ===== BACK TO TOP BUTTON =====
-    const backToTop = document.getElementById('backToTop');
-
-    const scrollTop = () => {
-        if (window.scrollY >= 400) {
-            backToTop.classList.add('show');
-        } else {
-            backToTop.classList.remove('show');
-        }
-    };
-    window.addEventListener('scroll', scrollTop);
 
     // ===== SCROLL REVEAL ANIMATION =====
     const observerOptions = {
@@ -341,6 +328,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ===== INITIALIZE =====
     console.log('Portfolio loaded successfully! 🚀');
+});
+
+// ===== CERTIFICATE MODAL FUNCTIONS =====
+function openCertModal(imageSrc, title) {
+    const modal = document.getElementById('certModal');
+    const modalImage = document.getElementById('certModalImage');
+    const modalTitle = document.getElementById('certModalTitle');
+    
+    modalImage.src = imageSrc;
+    modalTitle.textContent = title;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertModal() {
+    const modal = document.getElementById('certModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside the image
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('certModal');
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeCertModal();
+            }
+        });
+    }
+});
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeCertModal();
+    }
 });
 
 

@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rohith Valipishetty - Backend Developer, Machine Learning Engineer, Full-Stack Developer Portfolio">
+    <meta name="description" content="Rohith Valipishetty - Software developer, Backend Developer, Machine Learning Engineer Portfolio">
     <meta name="keywords" content="Java, Spring Boot, Machine Learning, Backend Developer, Software Engineer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href="styleindex.css" rel="stylesheet">
-    <title>Rohith Valipishetty | Backend Developer & ML Engineer</title>
+    <title>Rohith Valipishetty | Software Developer & Backend Developer</title>
 </head>
 
 <body>
@@ -26,27 +27,23 @@
             </a>
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                    <!-- <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li> -->
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                     <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+                <div class="nav-menu-actions">
+                    <a href="V_Rohith_Resume.pdf" download class="nav-resume">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
                 <div class="nav-close" id="nav-close">
                     <i class="fas fa-times"></i>
                 </div>
-            </div>
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <a href="V_Rohith_Resume.pdf" download class="nav-resume">
-                    <i class="fas fa-file-pdf"></i>
-                    <span>Resume</span>
-                </a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <i class="fas fa-bars"></i>
@@ -66,18 +63,16 @@
                         <span class="cursor">|</span>
                     </div>
                     <p class="hero-description">
-                        Backend Developer specializing in scalable Java Spring Boot systems and AI-powered applications.
+                        Software Developer who enjoys building things that actually make an impact. Curious learner, clean coder, and problem solver.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#experience" class="btn btn-primary">
-                            <i class="fas fa-briefcase"></i> View Experience
+                        <a href="V_Rohith_Resume.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download Resume
                         </a>
                         <a href="#contact" class="btn btn-outline">
                             <i class="fas fa-paper-plane"></i> Let's Connect
                         </a>
-                        <a href="V_Rohith_Resume.pdf" download class="btn btn-secondary">
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
+                        
                     </div>
                     <div class="hero-socials">
                         <a href="https://github.com/Rohith218764" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
@@ -97,12 +92,6 @@
                         <div class="hero-img-bg"></div>
                     </div>
                 </div>
-            </div>
-            <div class="hero-scroll">
-                <a href="#about" class="scroll-down">
-                    <span>Scroll Down</span>
-                    <i class="fas fa-chevron-down"></i>
-                </a>
             </div>
         </section>
 
@@ -149,12 +138,12 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-subtitle">Professional Journey</span>
-                    <h2 class="section-title">Work Experience</h2>
+                    <h2 class="section-title"> Experience</h2>
                 </div>
                 <div class="experience-timeline">
                     <div class="experience-item">
                         <div class="experience-icon">
-                            <i class="fas fa-briefcase"></i>
+                            <img src="Virtusa-logo.png" alt="Virtusa" class="experience-logo">
                         </div>
                         <div class="experience-content">
                             <div class="experience-header">
@@ -191,7 +180,7 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-subtitle">My Work</span>
-                    <h2 class="section-title">Featured Projects</h2>
+                    <h2 class="section-title"> Projects</h2>
                 </div>
                 <div class="projects-grid">
                     <!-- Project 1: Grocery Inventory -->
@@ -296,95 +285,61 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-subtitle">My Expertise</span>
-                    <h2 class="section-title">Technical Skills</h2>
+                    <h2 class="section-title">Skills</h2>
                 </div>
-                <div class="skills-container">
-                    <!-- Programming Languages -->
-                    <div class="skill-category">
-                        <div class="skill-category-header">
-                            <i class="fas fa-laptop-code"></i>
-                            <h3>Programming Languages</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">SQL (MySQL)</span>
-                        </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card" style="--border-color: #f89820;">
+                        <i class="devicon-java-plain"></i>
+                        <span>Java</span>
                     </div>
-
-                    <!-- Frontend Technologies -->
-                    <div class="skill-category">
-                        <div class="skill-category-header">
-                            <i class="fas fa-palette"></i>
-                            <h3>Front-End Technologies</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML</span>
-                            <span class="skill-tag">CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                        </div>
+                    <div class="skill-card" style="--border-color: #3776ab;">
+                        <i class="devicon-python-plain"></i>
+                        <span>Python</span>
                     </div>
-
-                    <!-- Backend Development -->
-                    <div class="skill-category">
-                        <div class="skill-category-header">
-                            <i class="fas fa-server"></i>
-                            <h3>Backend Development</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">Spring Boot</span>
-                            <span class="skill-tag">REST APIs</span>
-                            <span class="skill-tag">Hibernate / JPA</span>
-                            <span class="skill-tag">JWT Authentication</span>
-                        </div>
+                    <div class="skill-card" style="--border-color: #e34c26;">
+                        <i class="devicon-html5-plain"></i>
+                        <span>HTML5</span>
                     </div>
-
-                    <!-- Machine Learning -->
-                    <div class="skill-category">
-                        <div class="skill-category-header">
-                            <i class="fas fa-brain"></i>
-                            <h3>Machine Learning & Deep Learning</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">scikit-learn</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">Matplotlib</span>
-                            <span class="skill-tag">CNN</span>
-                            <span class="skill-tag">Error Level Analysis (ELA)</span>
-                        </div>
+                    <div class="skill-card" style="--border-color: #1572b6;">
+                        <i class="devicon-css3-plain"></i>
+                        <span>CSS3</span>
                     </div>
-
-                    <!-- NLP Technologies -->
-                    <div class="skill-category">
-                        <div class="skill-category-header">
-                            <i class="fas fa-language"></i>
-                            <h3>NLP Technologies</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Text Preprocessing</span>
-                            <span class="skill-tag">Tokenization</span>
-                            <span class="skill-tag">Transformers (BERT)</span>
-                            <span class="skill-tag">Sentiment Analysis</span>
-                        </div>
+                    <div class="skill-card" style="--border-color: #f7df1e;">
+                        <i class="devicon-javascript-plain"></i>
+                        <span>JavaScript</span>
                     </div>
-
-                    <!-- Tools & Platforms -->
-                    <div class="skill-category">
-                        <div class="skill-category-header">
-                            <i class="fas fa-tools"></i>
-                            <h3>Tools & Platforms</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">GitHub</span>
-                            <span class="skill-tag">VS Code</span>
-                            <span class="skill-tag">Jupyter Notebook</span>
-                            <span class="skill-tag">Google Colab</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">MySQL</span>
-                        </div>
+                    <div class="skill-card" style="--border-color: #6db33f;">
+                        <i class="devicon-spring-plain"></i>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="skill-card" style="--border-color: #336791;">
+                        <i class="devicon-mysql-plain"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-card" style="--border-color: #ff6f00;">
+                        <i class="fas fa-brain"></i>
+                        <span>Machine Learning</span>
+                    </div>
+                    <div class="skill-card" style="--border-color: #764ea2;">
+                        <i class="fas fa-atom"></i>
+                        <span>Deep Learning</span>
+                    </div>
+                    <div class="skill-card" style="--border-color: #181717;">
+                        <i class="devicon-github-original"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-card" style="--border-color: #007acc;">
+                        <i class="devicon-vscode-plain"></i>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="skill-card" style="--border-color: #f37726;">
+                        <i class="devicon-jupyter-plain"></i>
+                        <span>Jupyter</span>
+                    </div>
+                    <div class="skill-card" style="--border-color: #ff9900;">
+                        <i class="fas fa-cloud"></i>
+                        <span>AWS</span>
                     </div>
                 </div>
             </div>
@@ -404,8 +359,8 @@
                         </div>
                         <div class="education-content">
                             <div class="education-header">
-                                <h3>Integrated M.Tech – Computer Science (Core)</h3>
-                                <span class="education-grade">CGPA: 8.11</span>
+                                <h3>Integrated M.Tech – Computer Science</h3>
+                                <!-- <span class="education-grade">CGPA: 8.11</span> -->
                             </div>
                             <h4 class="education-institution">
                                 <i class="fas fa-university"></i>
@@ -413,7 +368,7 @@
                             </h4>
                             <span class="education-duration">
                                 <i class="far fa-calendar-alt"></i>
-                                Sep 2021 – May 2026
+                                 2021 –  2026
                             </span>
                         </div>
                     </div>
@@ -424,27 +379,16 @@
                         <div class="education-content">
                             <div class="education-header">
                                 <h3>Senior Secondary Education</h3>
-                                <span class="education-grade">Grade: 96.4%</span>
+                                <!-- <span class="education-grade">Grade: 96.4%</span> -->
                             </div>
                             <h4 class="education-institution">
                                 <i class="fas fa-building"></i>
-                                Vignan Junior College, Medchal, Telangana
+                                Vignan Junior College,Telangana
                             </h4>
-                        </div>
-                    </div>
-                    <div class="education-item">
-                        <div class="education-icon">
-                            <i class="fas fa-school"></i>
-                        </div>
-                        <div class="education-content">
-                            <div class="education-header">
-                                <h3>Secondary Education</h3>
-                                <span class="education-grade">GPA: 9.2</span>
-                            </div>
-                            <h4 class="education-institution">
-                                <i class="fas fa-building"></i>
-                                Dr. KKR Gowtham Concept School, Bachupally, Telangana
-                            </h4>
+                            <span class="education-duration">
+                                <i class="far fa-calendar-alt"></i>
+                                  2019 –  2021
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -460,32 +404,102 @@
                 </div>
                 <div class="certifications-grid">
                     <div class="certification-card">
-                        <div class="certification-icon">
-                            <i class="fab fa-microsoft"></i>
+                        <div class="cert-image-wrapper">
+                            <img src="Microsoft Azure ai-900 cer.jpg" alt="Azure AI Fundamentals" class="cert-thumbnail" onclick="openCertModal(this.src, 'Microsoft Certified: Azure AI Fundamentals')">
                         </div>
                         <div class="certification-content">
-                            <h3>Generative AI Productivity Skills</h3>
-                            <p class="certification-issuer">Microsoft & LinkedIn</p>
-                        </div>
-                        <a href="https://drive.google.com/file/d/1s2B0guG4bu6Ri9TZ8N_Tq_7AH3HvA2V_/view" target="_blank" rel="noopener noreferrer" class="certification-link" title="View Certificate">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                    <div class="certification-card">
-                        <div class="certification-icon">
-                            <i class="fab fa-microsoft"></i>
-                        </div>
-                        <div class="certification-content">
-                            <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+                            <div class="cert-header">
+                                <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+                                <a href="https://drive.google.com/file/d/1yNQqnnL7M2GGqrrL3ge6btamdxigvJ5B/view" target="_blank" rel="noopener noreferrer" class="cert-link" title="View on Google Drive">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                             <p class="certification-issuer">Microsoft</p>
                         </div>
-                        <a href="https://drive.google.com/file/d/1yNQqnnL7M2GGqrrL3ge6btamdxigvJ5B/view" target="_blank" rel="noopener noreferrer" class="certification-link" title="View Certificate">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+                    </div>
+                    <div class="certification-card">
+                        <div class="cert-image-wrapper">
+                            <img src="Generative AI Productivity Skills with Microsoft and LinkedIn.jpg" alt="Generative AI" class="cert-thumbnail" onclick="openCertModal(this.src, 'Generative AI Productivity Skills')">
+                        </div>
+                        <div class="certification-content">
+                            <div class="cert-header">
+                                <h3>Generative AI Productivity Skills</h3>
+                                <a href="https://drive.google.com/file/d/1s2B0guG4bu6Ri9TZ8N_Tq_7AH3HvA2V_/view" target="_blank" rel="noopener noreferrer" class="cert-link" title="View on Google Drive">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <p class="certification-issuer">Microsoft & LinkedIn</p>
+                        </div>
+                    </div>
+                    
+                    <div class="certification-card">
+                        <div class="cert-image-wrapper">
+                            <img src="AWS Cloud Practitioner.jpg" alt="AWS Practitioner" class="cert-thumbnail" onclick="openCertModal(this.src, 'AWS Cloud Practitioner Essentials')">
+                        </div>
+                        <div class="certification-content">
+                            <div class="cert-header">
+                                <h3>AWS Cloud Practitioner Essentials</h3>
+                                <a href="https://drive.google.com/file/d/1Vzne2KSbKqSGse6KUq1HiJ-deim44a1M/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link" title="View on Google Drive">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <p class="certification-issuer">AWS Training & Certification</p>
+                        </div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="cert-image-wrapper">
+                            <img src="Data visualization certificate_page-0001.jpg" alt="Data Visualization" class="cert-thumbnail" onclick="openCertModal(this.src, 'Data Visualisation: Empowering Business')">
+                        </div>
+                        <div class="certification-content">
+                            <div class="cert-header">
+                                <h3>Data Visualisation: Empowering Business with Effective Insights</h3>
+                                <a href="https://drive.google.com/file/d/11wnsI2Bg7muyz7E5seDgYc2MAFcKVsYB/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link" title="View on Google Drive">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <p class="certification-issuer">Forage</p>
+                        </div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="cert-image-wrapper">
+                            <img src="SQL and Relational Databases 101-IBM.jpg" alt="SQL Databases" class="cert-thumbnail" onclick="openCertModal(this.src, 'SQL and Relational Databases 101')">
+                        </div>
+                        <div class="certification-content">
+                            <div class="cert-header">
+                                <h3>SQL and Relational Databases 101</h3>
+                                <a href="https://drive.google.com/file/d/1QcohH6pJI3fyeMLEg_sBD3gFW9_nC7ga/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link" title="View on Google Drive">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <p class="certification-issuer">IBM / Cognitive Class</p>
+                        </div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="cert-image-wrapper">
+                            <img src="Data Fundamentals Completion Certificate _ SkillsBuild_.jpg" alt="Data Fundamentals" class="cert-thumbnail" onclick="openCertModal(this.src, 'Data Fundamentals')">
+                        </div>
+                        <div class="certification-content">
+                            <div class="cert-header">
+                                <h3>Data Fundamentals</h3>
+                                <a href="https://drive.google.com/file/d/1N02lBCubiq2S052kilAilzz2PO2WlKbS/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link" title="View on Google Drive">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <p class="certification-issuer">SkillsBuild</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Certificate Modal -->
+        <div class="cert-modal" id="certModal">
+            <div class="cert-modal-content">
+                <span class="cert-modal-close" onclick="closeCertModal()">&times;</span>
+                <img id="certModalImage" src="" alt="Certificate" class="cert-modal-image">
+                <p id="certModalTitle" class="cert-modal-title"></p>
+            </div>
+        </div>
 
         <!-- Contact Section -->
         <section class="contact section" id="contact">
@@ -541,23 +555,20 @@
 
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                            <!-- <label for="name" class="form-label"></label> -->
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                            <!-- <label for="email" class="form-label">Email Address</label> -->
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
                         </div>
+                
                         <div class="form-group">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Your message here..." rows="5" required></textarea>
+                            <!-- <label for="message" class="form-label">Message</label> -->
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Enter your message here..." rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-submit">
-                            <span>Send Message</span>
+                            <span>Let's Talk</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -592,10 +603,12 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <a href="#hero" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+    <!-- Back to Top Button - Removed, replaced with Theme Toggle at bottom-right -->
+
+    <!-- Theme Toggle - Fixed Position -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
