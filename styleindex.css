@@ -774,10 +774,11 @@ body.dark-mode .theme-toggle {
 
 /* Skill Grid */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 22px;
-    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 23.6px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -787,6 +788,7 @@ body.dark-mode .theme-toggle {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 130px;
     padding: 28px 20px;
     background: var(--bg-card);
     border: 3px solid var(--border-color, var(--primary));
@@ -864,15 +866,16 @@ body.dark-mode .theme-toggle {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 28px;
-    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1400px;
     margin: 0 auto;
+    justify-items: center;
 }
 
 .project-card {
     background: var(--bg-section);
-    padding: 32px;
+    padding: 35px;
     border-radius: var(--radius-lg);
     border: none;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -880,6 +883,9 @@ body.dark-mode .theme-toggle {
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 480px;
+    /* justify-content: center; */
 }
 
 .project-card::before {
@@ -918,8 +924,19 @@ body.dark-mode .theme-toggle {
 .project-description {
     font-size: 0.95rem;
     color: var(--text-body);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     line-height: 1.7;
+}
+
+.project-metrics {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+    padding: 8px 0;
+    border-left: 3px solid var(--primary);
+    padding-left: 10px;
 }
 
 .project-tech {
@@ -1952,7 +1969,7 @@ body.dark-mode .theme-toggle {
     }
     
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .education-item {
@@ -2006,11 +2023,14 @@ body.dark-mode .theme-toggle {
 
     /* Skills Responsive - Tablet */
     .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 18px;
+        max-width: 900px;
     }
 
     .skill-card {
+        width: 120px;
         padding: 25px 18px;
     }
 
@@ -2046,6 +2066,10 @@ body.dark-mode .theme-toggle {
         flex-direction: column;
     }
     
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
     .project-card {
         padding: 24px;
     }
@@ -2095,11 +2119,14 @@ body.dark-mode .theme-toggle {
 
     /* Skills Responsive - Mobile */
     .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 14px;
+        max-width: 100%;
     }
 
     .skill-card {
+        width: 100px;
         padding: 22px 16px;
     }
 
